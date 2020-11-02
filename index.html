@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahee</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/16c6f70756.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="home">
+      <div class="container">
+        <div class="home__top">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="img/logo.png" alt="logo">
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
+              <li class="nav__item"><a class="nav__link" href="#about">ABOUT</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">SERVICES</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">GALLERY</a></li>
+              <li class="nav__item"><a class="nav__link" href="#blog">BLOG</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="home__content">
+          <div class="home__text">
+            <h1 class="home__title">Fresh Life</h1>
+            <p class="home__descr">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+          <button class="btn btn--orange-mb" type="button">GET FREE NOW</button>
+        </div>
+        <div class="home__scroll">
+          <a class="home__link" href="#about">
+            <img src="img/scroll.png" alt="scroll">
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__block-img">
+              <img class="about__img" src="img/about.png" alt="">
+            </div>
+            <div class="text text--w550">
+              <h2 class="text__title">About Us</h2>
+              <p class="text__descr">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+              <p class="text__descr">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog" id="blog">
+        <div class="container">
+          <div class="text text--width-m0" >
+            <h2 class="text__title">Blog</h2>
+            <p class="text__descr">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+          </div>
+          
+          <div class="articles">
+            <a class="articles__post" href="#" target="_blank">
+              <div class="articles__block-img">
+                <img class="articles__img" src="img/blog/first.jpg" alt="">
+              </div>
+              <!-- span в date не проходит валидацию, не знаю как еще сделать -->
+              <article class="articles__block">
+                <time class="articles__date">20 <span class="articles__mounth">NOV</span></time>
+                <h2 class="articles__title">Green Smoothies: Too Much of a Good Thing?</h2>
+                <div class="articles__author">By Auskteez - 2 hours ago</div>
+              </article>
+            </a>
+            <a class="articles__post" href="#" target="_blank">
+              <div class="articles__block-img">
+                <img class="articles__img" src="img/blog/second.jpg" alt="">
+              </div>
+              <article class="articles__block">
+                <time class="articles__date">14 <span class="articles__mounth">NOV</span></time>
+                <h2 class="articles__title">Growing Food and a “Thirst” for Innovation</h2>
+                <div class="articles__author">By Auskteez - 3 hours ago</div>
+              </article>
+            </a>
+            <a class="articles__post" href="#" target="_blank">
+              <div class="articles__block-img">
+                <img class="articles__img" src="img/blog/third.jpg" alt="">
+              </div>
+              <article class="articles__block">
+                <time class="articles__date">10 <span class="articles__mounth">NOV</span></time>
+                <h2 class="articles__title">Pesticides & Food: What You Need to Know</h2>
+                <div class="articles__author">By Auskteez - 6 hours ago</div>
+              </article>
+            </a>
+          </div>
+
+          <button class="btn btn--blog-m50auto-db" type="button">VIEW MORE</button>
+        </div>
+      </section>
+
+      <div class="contact" style="background: url(img/bg.jpg) center/cover no-repeat;">
+        <div class="container">
+          <div class="contact__top">
+            <div class="text text--tac-black">
+              <h2 class="text__title">Contact</h2>
+              <p class="text__descr">For new projects, ideas, business or anything
+                you'd like to discuss, contact with me!</p>
+            </div>
+            <div class="contact__bloks">
+              <form action="" method="POST" name="contact__form" autocomplete="off">
+                <ul class="list block--1-2" >
+                  <li><input class="list__input" type="text" name="fullname" placeholder="Your full name..." required></li>
+                  <li><input class="list__input" type="email" name="email" placeholder="Your email..." required></li>
+                  <li><input class="list__input" type="tel" name="tel" placeholder="Your phone number..." required></li>
+                  <li><textarea class="list__input list__input--area" name="message" placeholder="Your message..."></textarea></li>
+                  <input type="submit">
+                </ul>
+              </form>
+              <address class="info block--1-2">
+                <div class="info__title">ADDRESS</div><div class="info__descr">123 City name, Street, City, Country</div>
+                <div class="info__title">EMAIL</div><div class="info__descr">cahee@domain.com</div>
+                <div class="info__title">PHONE</div><div class="info__descr">+012 345 6789</div>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__descr">© 2015 Company. All right reserved.</div>
+            <div class="logo">
+              <a href="#">
+                <img src="img/logo-small.png" alt="logo">
+              </a>
+            </div>
+            <div class="footer__author">Made with <a href="#" class="footer__link">love</a> by Auskteez</div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </body>
+
+</html> 
