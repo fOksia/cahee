@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <header class="home">
+    <header class="home" id="home">
       <div class="container">
         <div class="home__top">
           <div class="logo">
@@ -22,10 +22,10 @@
           </div>
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
+              <li class="nav__item"><a class="nav__link" href="#home">HOME</a></li>
               <li class="nav__item"><a class="nav__link" href="#about">ABOUT</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">SERVICES</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">GALLERY</a></li>
+              <li class="nav__item"><a class="nav__link" href="#services">SERVICES</a></li>
+              <li class="nav__item"><a class="nav__link" href="#gallery">GALLERY</a></li>
               <li class="nav__item"><a class="nav__link" href="#blog">BLOG</a></li>
               <li class="nav__item"><a class="nav__link" href="#contact">CONTACT</a></li>
             </ul>
@@ -62,7 +62,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <div class="services__inner">
             <div class="services__kinds">
@@ -89,6 +89,52 @@
             <div class="services__just" style="background: url(img/tomato.png) center/contain no-repeat;">
               <h2 class="text__title text__title--white">Our Services</h2>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="gallery__inner">
+            <div class="text text--tac-black text--width-m0">
+              <h2 class="text__title">Gallery</h2>
+              <p class="text__descr">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="rows">
+              <div class="rows__block rows__block--2-3">
+                <img src="img/gallery/1.jpg" alt="">
+              </div>
+              <div class="rows__block rows__block--1-3">
+                <div class="rows__block-in1">
+                  <img src="img/gallery/2.jpg" alt="">
+                </div>
+                <div class="rows__block-in2">
+                  <img src="img/gallery/3.jpg" alt="">
+                </div>
+              </div>
+              <div class="rows__block rows__block--1-2">
+                <img src="img/gallery/4.jpg" alt="">
+              </div>
+              <div class="rows__block rows__block--1-2">
+                <img src="img/gallery/5.jpg" alt="">
+              </div>
+            </div>
+            <button class="btn btn--blog-m50auto-db">VIEW MORE</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe" id="subscribe" style="background: url(img/subscribebg.jpg) right no-repeat;">
+        <div class="container">
+          <div class="subscribe__inner">
+            <div class="subscribe__block">
+              <h2 class="subscribe__title">Subscribe To Us</h2>
+              <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <form class="subscribe__form" action="" method="POST">
+              <input class="subscribe__input" type="email" name="email" placeholder="Your email address...">
+              <button class="btn btn--green-p25" type="submit">SUBSCRIBE</button>
+            </form>
           </div>
         </div>
       </section>
